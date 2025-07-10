@@ -4,15 +4,20 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //TODO: LAÇO RESPONSAVEL PELAS OPÇÕES DOQ FAZER NA BIBLIOTECA
+
         //Se o Usuario necessitar Inserir seus proprios dados
         //Dentro dos parametro passaria algo como: setNome(scanner.nextLine())
+
         //todo: todos os dados a serem armazenados vai ser em LOCACAO
         //TODO: CRIAR UM MENU PARA O CADASTRO DE UM USUARIO DA BIBLIOTECA
 
         //TODO: CRIE UM MENU PARA O CADASTRO DE UM FUNCIONARIO
         //TODO: CRIAR UM MENU PARA O CADASTRO DE UM LIVRO DA BIBLIOTECA
 
-        Scanner scanner = new Scanner(System.in);
+
         //TODO: criando o objeto Usuario: contem todos as propriedades da classe Usuario
         Usuario usuario = new Usuario();
         Funcionario funcionario = new Funcionario();
