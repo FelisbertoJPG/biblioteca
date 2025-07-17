@@ -9,6 +9,7 @@ public class Locacao {
     private Date dataLocacao;
     private Date dataDevolucao;
 
+
     public Usuario getUsuario() {
         return usuario;
     }

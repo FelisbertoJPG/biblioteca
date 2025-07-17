@@ -1,7 +1,9 @@
 public class Usuario {
     private String nome;
     private int idade;
-    private Locacao locacao;
+    private String senha;
+    private Endereco endereco;
+    private String email;
 
     public void setNome(String nome){
         this.nome = nome;
@@ -22,4 +24,26 @@ public class Usuario {
         return idade;
     }
 
+    public void setSenha(String senha) {
+        this.senha = senha;
+
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+    public void setEndereco(Endereco endereco){
+        this.endereco = endereco;
+    }
+    public Endereco getEndereco(){
+        return endereco;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
