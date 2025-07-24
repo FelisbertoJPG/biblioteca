@@ -1,6 +1,7 @@
 import java.util.Date;
 
 public class Locacao {
+    //private Usuario usuario = new Usuario();
     private Usuario usuario;
     private Livro livro;
     private Funcionario funcionario;
@@ -8,6 +9,7 @@ public class Locacao {
     private double multa;
     private Date dataLocacao;
     private Date dataDevolucao;
+
 
 
     public Usuario getUsuario() {
