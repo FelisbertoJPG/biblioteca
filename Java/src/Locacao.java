@@ -1,7 +1,6 @@
 import java.util.Date;
 
 public class Locacao {
-    //private Usuario usuario = new Usuario();
     private Usuario usuario;
     private Livro livro;
     private Funcionario funcionario;
@@ -11,6 +10,13 @@ public class Locacao {
     private Date dataDevolucao;
 
 
+    //tinah q inicar como objeto
+    public Locacao() {
+        this.usuario = new Usuario();
+        this.livro = new Livro();
+        this.funcionario = new Funcionario();
+
+    }
 
     public Usuario getUsuario() {
         return usuario;

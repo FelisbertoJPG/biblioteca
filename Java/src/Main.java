@@ -19,7 +19,9 @@ public class Main {
 
         //variaveis global
         int op;
-
+        // do while dentro de um switch
+        // dentro outras op
+        // cadastros gerais e dentro dele o login
         do {
             System.out.println("===Biblioteca===");
             System.out.println("Cadastre-se [1]");
@@ -37,26 +39,36 @@ public class Main {
                 System.out.println("Insira seus dados cadastrais:");
                 System.out.println("Nome:");
                 locacao.getUsuario().setNome(scanner.nextLine());
+                locacao.getUsuario().setNome(scanner.nextLine());
+                //trata o Enter pendente scanner.nextLine();
+                //(scanner.next()) => String, para de ler quando tem Espaço na frase
+                //NextLine le a linha toda ate o Enter
+                //se perde nos sout()
                 System.out.println("Idade:");
                 locacao.getUsuario().setIdade(scanner.nextInt());
+                scanner.nextLine();
                 System.out.println("Endereço:");
                 System.out.println("----------------------");
                 System.out.println("Rua: ");
                 locacao.getUsuario().getEndereco().setRua(scanner.nextLine());
+
                 System.out.println("Bairro: ");
                 locacao.getUsuario().getEndereco().setBairro(scanner.nextLine());
+
                 System.out.println("Numero: ");
                 locacao.getUsuario().getEndereco().setNum(scanner.nextInt());
 
                 //TODO: EMAIL
                 System.out.println("Insira seu E-mail de Cadastro: ");
-                locacao.getUsuario().setEmail(scanner.nextLine());
+                locacao.getUsuario().setEmail(scanner.next());
 
                 //TODO: SENHA
                 System.out.println("Insira uma senha: ");
-                locacao.getUsuario().setSenha(scanner.nextLine());
+                locacao.getUsuario().setSenha(scanner.next());
+
                 System.out.println("Seja Bem Vindo: "+locacao.getUsuario().getNome());
                 break;
+                //TODO:criar uma função a parte, pra tentar chamar aqui
             case 2:
                 //TODO: LOGIN
                 //pull
