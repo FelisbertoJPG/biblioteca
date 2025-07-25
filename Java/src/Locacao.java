@@ -10,6 +10,14 @@ public class Locacao {
     private Date dataDevolucao;
 
 
+    //tinah q inicar como objeto
+    public Locacao() {
+        this.usuario = new Usuario();
+        this.livro = new Livro();
+        this.funcionario = new Funcionario();
+
+    }
+
     public Usuario getUsuario() {
         return usuario;
     }

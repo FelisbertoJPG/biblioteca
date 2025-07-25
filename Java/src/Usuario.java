@@ -5,6 +5,10 @@ public class Usuario {
     private Endereco endereco;
     private String email;
 
+    public Usuario(){
+        this.endereco = new Endereco();
+    }
+
     public void setNome(String nome){
         this.nome = nome;
     }
